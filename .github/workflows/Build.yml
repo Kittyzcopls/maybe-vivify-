@@ -33,9 +33,10 @@ jobs:
     
     - name: Install QPM
       run: |
-        wget -q https://github.com/QuestPackageManager/QPM.CLI/releases/download/v0.16.6/qpm-0.16.6-linux-x64
-        chmod +x qpm-0.16.6-linux-x64
-        sudo mv qpm-0.16.6-linux-x64 /usr/local/bin/qpm
+        wget https://github.com/QuestPackageManager/QPM.CLI/releases/download/v1.5.11/qpm-linux-x64.zip
+        unzip qpm-linux-x64.zip
+        chmod +x qpm
+        sudo mv qpm /usr/local/bin/qpm
     
     - name: Restore QPM dependencies
       run: qpm restore
