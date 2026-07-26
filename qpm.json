@@ -7,6 +7,7 @@
     "version": "1.0.0"
   },
   "additionalData": {
+    "packageType": "mod",
     "overrideSoName": "libVivify.so"
   },
   "dependencies": [
