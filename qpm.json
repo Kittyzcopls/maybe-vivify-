@@ -6,6 +6,9 @@
     "description": "Quest port of Vivify for Beat Saber - map visuals with Quest-compatible shader filtering.",
     "version": "1.0.0"
   },
+  "additionalData": {
+    "overrideSoName": "libVivify.so"
+  },
   "dependencies": [
     {
       "version": "^6.4.2",
