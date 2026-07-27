@@ -34,9 +34,13 @@ jobs:
     - name: Install QPM
       run: |
         wget https://github.com/QuestPackageManager/QPM.CLI/releases/download/v1.5.11/qpm-linux-x64.zip
-        unzip qpm-linux-x64.zip
+        unzip -o qpm-linux-x64.zip
         chmod +x qpm
         sudo mv qpm /usr/local/bin/qpm
+        qpm --version
+    
+    - name: Verify qpm.json
+      run: cat qpm.json
     
     - name: Restore QPM dependencies
       run: qpm restore
